@@ -11,8 +11,8 @@ int main(void)
 	long int valor, limite;
 	printf("Digite o valor que deseja decompor: ");
 	scanf("%ld", &valor);
-	limite = crivo_erastostenes(valor);
-	printf("O limite do crivo é: \n%ld", limite);
+    crivo_erastostenes(valor);
+	//printf("O limite do crivo é: \n%ld", limite);
 	
 	
 	
@@ -23,8 +23,19 @@ int main(void)
 unsigned long int crivo_erastostenes(long int valor)
 {
 	
-	long limite = (long) sqrt(valor);
-	return limite;
+	long raiz = (long) sqrt(valor);
+	long limite[raiz];
+	
+	for(int i = 1; i <= raiz; i++)
+	{
+		limite[i] = i;
+		printf("\n%ld", limite[i]);
+		
+		
+	}
+	
+	
+	return 1;
 	
 	
 	
