@@ -1,26 +1,29 @@
 #include <stdio.h>
 
 
-int soma(int num1, int num2);
 
-
-int main(void)
+int main (void)
 {
-		int num1, num2;
-		printf("Digite o primeiro número: ");
-		scanf("%d", &num1);
-		printf("Digite o segundo número: ");
-		scanf("%d", &num2);
+	int num;
+	
+	
+	
+	do
+	{
+		
+		printf("Digite um numero maior do que zero ");
+		scanf("%d", &num);
+		if (num <=0){
+		printf("Esse número nao é valido\n");
+	}
+	else{
+		printf("Válido");
+	}
+		
+	}while(num <= 0);
 	
 	
 	return 0;
 }
 
-int soma(int num1, int num2)
-{
-	
-	
-	return num1 + num2;
-	
-	
-}
+
